@@ -19,7 +19,9 @@
         "url": "https://github.com/israelbejarano/celichain/issues"
     },
     "homepage": "https://github.com/israelbejarano/celichain#readme",
-    "dependencies": {},
+    "dependencies": {
+        "crypto-js": "^4.0.0"
+    },
     "devDependencies": {
         "@babel/core": "^7.13.15",
         "@babel/node": "^7.13.13",
