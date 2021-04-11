@@ -7,8 +7,8 @@ console.log(`Proyecto ${name} v${version} started`);
 const { genesis } = Block;
 console.log(genesis.toString());
 
-const block = new Block(Date.now(), genesis.hash, 'h4sh', 'd4t4');
-console.log(block.toString());
+const block1 = Block.mine(genesis, 'data-1');
+console.log(block1.toString());
 
-const block2 = new Block(Date.now(), block.hash, 'h4sh_2', 'd4t4_2');
+const block2 = Block.mine(block1, 'data-2');
 console.log(block2.toString());
