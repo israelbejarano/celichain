@@ -6,6 +6,11 @@ class Block {
         this.data = data;
     }
 
+    static get genesis() {
+        const timestamp = (new Date(2020, 0, 22)).getTime();
+        return new this(timestamp, undefined, 'g3n3s1s-h4hs', 'soy el bloque genesis');
+    }
+
     toString() {
         const {
             timestamp,
