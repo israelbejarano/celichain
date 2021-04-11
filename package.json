@@ -4,7 +4,7 @@
     "description": "proyecto blockchain propio",
     "main": "index.js",
     "scripts": {
-        "start": "babel-node index",
+        "start": "babel-node ./src/service/index",
         "nodemon": "nodemon --exec npm start",
         "lint": "eslint index.js src",
         "test": "jest",
