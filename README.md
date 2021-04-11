@@ -35,7 +35,7 @@ npm run test:watch
 Una vez tenemos la parte de sockets levantada para levantar otra estancia del servidor seteamos las variables de env con otros valores y levantamos el servidor. Si estamos en powershell podemos hacer:
 
 ```
-$env:P2P_PORT=5001; $env:HTTP_PORT=3001; npm run start
+$env:P2P_PORT=5001; $env:HTTP_PORT=3001; $env:PEERS="ws:localhost:5000"; npm run start
 ```
 
-Cambiando los puertos podemos levantar todas las instancias del servidor que queramos.
+Cambiando los puertos podemos levantar todas las instancias del servidor que queramos. Añadiendo en la var PEERS más ws:localhost:puerto separados por , nos conectamos a los nodos previamente levantados.
