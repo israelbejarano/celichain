@@ -1,10 +1,10 @@
-import BlockChain from '../blockchain';
+import Blockchain from '../blockchain';
 import validate from './validate';
 describe('validate()', () => {
     let blockchain;
 
     beforeEach(() => {
-        blockchain = new BlockChain();
+        blockchain = new Blockchain();
     });
 
     it('validates a valid chain', () => {

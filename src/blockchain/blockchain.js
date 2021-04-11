@@ -1,6 +1,7 @@
 import Block from './block';
+import validate from './modules/validate';
 
-class BlockChain {
+class Blockchain {
     constructor() {
         this.blocks = [Block.genesis];
     }
@@ -13,6 +14,19 @@ class BlockChain {
 
         return block;
     }
+
+    replace(newBlocks = []) {
+        if (newBlocks.length < this.blocks.length) throw Error('Received chain is not longer than current chain');
+        try {
+            validate(newBlocks);
+        } catch (error) {
+            throw Error('Received chain is invalid.');
+        }
+
+        this.blocks = newBlocks;
+
+        return this.blocks;
+    }
 }
 
-export default BlockChain;
+export default Blockchain;

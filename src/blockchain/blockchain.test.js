@@ -1,11 +1,11 @@
-import BlockChain from './blockchain';
+import Blockchain from './blockchain';
 import Block from './block';
 
 describe('Blockchain', () => {
     let blockchain;
 
     beforeEach(() => {
-        blockchain = new BlockChain();
+        blockchain = new Blockchain();
     });
 
     it('every blockchain has a genesis blockchain', () => {
