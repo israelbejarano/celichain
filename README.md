@@ -18,3 +18,9 @@ Para ver los errores de transpilación del código usamos el script que hemos ll
 ```
 npm run lint
 ```
+
+Para lanzar el testing con jest
+
+```
+npm run test
+```
