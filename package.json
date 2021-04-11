@@ -21,7 +21,9 @@
     },
     "homepage": "https://github.com/israelbejarano/celichain#readme",
     "dependencies": {
-        "crypto-js": "^4.0.0"
+        "body-parser": "^1.19.0",
+        "crypto-js": "^4.0.0",
+        "express": "^4.17.1"
     },
     "devDependencies": {
         "@babel/core": "^7.13.15",
