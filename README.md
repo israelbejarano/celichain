@@ -24,3 +24,9 @@ Para lanzar el testing con jest
 ```
 npm run test
 ```
+
+Para lanzar el testing con jest en modo watcher
+
+```
+npm run test:watch
+```
