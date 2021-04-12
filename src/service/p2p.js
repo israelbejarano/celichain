@@ -32,6 +32,12 @@ class P2PService {
         });
         socket.send(JSON.stringify({ type: MESSAGE.BLOCKS, value: blocks }));
     }
+
+    broadcast(type, value) {
+        console.log(`[ws:broadcast] ${type}...`);
+        const message = JSON.stringify({ type, value });
+        this.sockets.forEach((socket) => socket.send(message));
+    }
 }
 
 export default P2PService;
